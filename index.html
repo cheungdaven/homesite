@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===========================
+    THEME INFO
+    =========================== -->
+    <meta name="description" content="CVstrap is another Free minimal CV HTML theme by EvenFly built with Bootstrap 3.3.0. and released under CC-3.0 license.">
+    <meta name="keywords" content="curriculum vitae, cv, one page, onepage, bootstrap, responsive, resume, timeline, free cv">
+    <meta name="author" content="Mamun Srizon">
+
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>Shuai Zhang's Homepage</title>
+    <meta name="keywords" content="UNSW, DATA61, SHUAI ZHANG, CSE, Recommendation System">
+    <meta name="author" content="shuai zhang, daven">
+    <meta name="description" content="this is shuai zhang's homepage" />
+
+
+
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- ===========================
+    FONTS & ICONS
+    =========================== -->
+    <link href='http://fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:400' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<script>
+$(document).ready(function(){
+
+    // hide #back-top first
+    $("#back-top").hide();
+    
+    // fade in #back-top
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+
+        // scroll body to 0px on click
+        $('#back-top a').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+
+});
+</script>
+</head>
+<a name="top"></a>
+<body>
+    <div class="container">
+
+        <!-- ===========================
+        HEADER
+        ============================ -->
+        <div id="header" class="row">
+            <div class="col-sm-2">
+                <img class="propic" src="img/shuai.jpg" alt="">
+            </div>
+            <!-- photo end-->
+
+            <div class="col-sm-10">
+                <div class="cv-title">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h1>Shuai Zhang</h1>
+                        </div>
+                        <div class="col-sm-5 text-right dl-share">
+                            <!-- AddToAny BEGIN -->
+                            <script type="text/javascript">
+                                var a2a_config = a2a_config || {};
+                                a2a_config.linkname = "Minimal CV by EvenFly";
+                                a2a_config.num_services = 6;
+                                a2a_config.prioritize = ["facebook", "twitter", "google_plus", "linkedin", "pinterest", "email"];
+                            </script>
+                            <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+                            <!-- AddToAny END -->
+
+                            <a class="btn btn-success" href="http://shuaizhang.tech/file/Curriculum%20vitae%20Shuai%20Zhang.pdf" target="_blank"><span class="fa fa-download"></span>Curriculum vitae</a>
+                        </div>
+                    </div>
+                    <h2>Phd Student at CSE, UNSW and Data61, CSIRO </h2>
+                </div><!-- Title end-->
+
+                <!-- ===========================
+                SOCIAL & CONTACT
+                ============================ -->
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li><a href="mailto:cheungshuai@outlook.com"><span class="social fa fa-envelope-o"></span>cheungshuai@outlook.com</a>
+                            </li>
+                            <li><a href="https://scholar.google.com.au/citations?user=PPjdxlcAAAAJ&hl=en"><span class="social fa fa-google"></span>Scholar</a>
+                            </li>
+                        </ul>
+                    </div><!-- social 1st col end-->
+
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li><a href=""><span class="social fa fa-phone"></span>+61 449086684</a>
+                            </li>
+                            <li><a href="http://shuaizhang.tech/"><span class="social fa fa-link"></span>Blog</a>
+                            </li>
+                        </ul>
+                    </div><!-- social 2nd col end-->
+
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.linkedin.com/in/shuai-zhang-b3762911b/?trk=hp-identity-headline" target="_blank"><span class="social fa fa-linkedin"></span>Linkedin</a>
+                            </li>
+                            <li><a href="http://insdata.org/"><span class="social fa fa-link"></span>InsData</a>
+                            </li>
+                        </ul>
+                    </div><!-- social 3rd col end-->
+                </div><!-- header social end-->
+            </div><!-- header right end-->
+        </div><!-- header end-->
+
+        <hr class="firsthr">
+
+        <!-- ===========================
+        BODY LEFT PART
+        ============================ -->
+        <div class="col-md-8 mainleft">
+
+            <div id="statement" class="row mobmid">
+                <div class="col-sm-1">
+                    <span class="secicon fa fa-newspaper-o"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11">
+                    <h3>News</h3>
+                    <div class="row">
+                        <blockquote>
+                            <p>Paper accepted by SIGIR2017.</p>
+                        </blockquote>
+                    </div><!--1st testimonial end-->
+
+                </div><!--info end-->
+            </div><!--personal statement end-->
+            <hr>
+            <div id="statement" class="row mobmid">
+                <div class="col-sm-1">
+                    <span class="secicon fa fa-user"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11">
+                    <h3>Biography</h3>
+                    <p>Shuai Zhang is a Phd student at the <a href="https://www.engineering.unsw.edu.au/computer-science-engineering/" target="_blank">School of Computer Science and Engineering</a>, <a href="https://www.unsw.edu.au/" target="_blank">University of New South Wales</a> (UNSW), as well as at <a href="https://www.data61.csiro.au/" target="_blank">Data61</a>, <a href="https://www.csiro.au/" target="_blank">CSIRO</a>, since Oct. 2016. 
+                    <p>He received a Bachelor degree in 2014 from the <a href="http://im.nju.edu.cn/eng/" target="_bland">School of Information Management</a>, <a href="http://www.nju.edu.cn/english/" target="_blank">Nanjing University</a> (NJU), and majored in Information Management and Information System.
+
+                </div><!--info end-->
+            </div><!--personal statement end-->
+        </div><!--left end-->
+        
+        <!-- ===========================
+        SIDEBAR
+        =========================== -->
+        <div class="col-md-4 mainright">
+
+            <div class="row">
+                <div class="col-sm-1 col-md-2 mobmid">
+                    <span class="secicon fa fa-magic"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11 col-md-10">
+                    <h3 class="mobmid">Research Interests</h3>
+                    <li>Recommendation System</li>
+                    <li>Deep Learning</li>
+                    <li>Internet of Things</li>
+                </div><!--info end-->
+            </div><!--tech skills end-->
+            
+            <hr>
+
+            <div class="row mobmid">
+                <div class="col-sm-1 col-md-2">
+                    <span class="secicon fa fa-group"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11 col-md-10 ">
+                    <h3>Phd Supervisors</h3>
+                    <li><a href="http://linayao.com/" target="_blank">Lina Yao</a>, UNSW</li>
+                    <li><a href="https://ts.data61.csiro.au/people/?cn=Sherry+Xu" target="_blank">Xiwei Xu</a>, Data61, CSIRO</li>
+                    <li><a href="http://cgi.cse.unsw.edu.au/~limingz/home/" target="_blank">Liming Zhu</a></span>, Data61, CSIRO</li>
+
+                </div><!--awards end-->
+
+            </div>
+
+
+        </div><!--right end-->
+
+
+        <div id="header" class="row">
+        </div><!-- header end-->
+        <hr class="firsthr">
+
+  <a name="menu"></a>
+  <table width="100%">
+    <tbody><tr>
+    <td style="width:20%"><h4><a href="#publication">Publications</a></h4></td>
+    <td style="width:20%"><h4><a href="#professional">Professional<br>Activities</a></h4></td>
+    <td style="width:20%"><h4><a href="#teaching">Teaching</a></h4></td>
+    <td style="width:20%"><h4><a href="#research">Research<br>Demos</a></h4></td>
+    <td style="width:20%"><h4><a href="#honors">Honors</a></h4></td>
+    </tr>
+  </tbody></table>
+        <a name="publication"></a>
+        <hr class="firsthr">
+        <div class="col-sm-1">
+             <span class="secicon fa fa-paper-plane-o"></span>
+        </div><!--icon end-->       
+        <h3>Publications</h3>
+        <div style="margin-left: 65px">
+
+                <br>
+                <h4 class="title">Conferences</h4><br>  
+        <ul>
+                <li><span> 
+
+            <b>AutoSVD++: An Efficient Hybrid Collaborative Filtering Model via Contractive Auto-encoders</b><br> 
+            <i><b>Shuai Zhang</b>; Lina Yao; Xiwei Xu.</i><br> 
+            The 40th International ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SIGIR 2017</b>)
+            <a href="https://arxiv.org/abs/1704.00551">PDF</a></span></ul>
+        </li></ul>
+            <br>
+
+        <h4 class="title">Journals</h4><br>
+        <ul>
+        <li><span> 
+            <b>An Ontology & Linked Data Driven Semantic Integration Method of Library Information Resources and Its Evaluation (10 years best paper award)</b>, 
+            <i>Shiyan Ou; Shan Hu; <b>ShuaiZhang</b>.</i><br> 
+            Library and Information Service, 2014, 58(2) 
+            <a href="http://en.cnki.com.cn/Article_en/CJFDTOTAL-TSQB201402002.htm">PDF</a>
+           </span>
+        </li> </ul>
+
+        </div>
+        
+        <!-- ===========================
+            JOB EXPERIENCES
+        ============================ -->
+        <a name="professional"></a>
+        <hr class="firsthr">
+            <div class="col-sm-1">
+                <span class="secicon fa fa-suitcase"></span>
+            </div><!--icon end-->       
+        <h3>Professional Activities</h3>
+
+        <div style="margin-left: 65px">
+
+
+        <h4 class="title">Reviewer</h4><br>  
+        <ul>
+            <li>The International Conference on Web Services (ICWS), 2017</li>
+        </ul><br>
+
+        <h4 class="title">Membership</h4><br>
+        <ul>
+            <li style="color: #555">ACM student membership, Jan.2017-Present</li>
+            <li style="color: #555">IEEE student membership, Jan.2017-Present</li> 
+        </ul><br>
+
+        <h4 class="title">Software Engineer, OPPO, Jul.2014-Jun.2016</h4><br>
+        <ul>
+            <li>Developed Android mobile applications and widgets</li> 
+        </ul>
+        </div>
+
+        <!-- ===========================
+            Award
+        ============================ -->
+        <a name="honors"></a>
+        <hr class="firsthr">
+            <div class="col-sm-1">
+                <span class="secicon fa fa-trophy"></span>
+            </div><!--icon end-->       
+        <h3>Honors & Awards</h3>
+
+        <div style="margin-left: 65px">
+
+        <li style="color: #555">UNSW Tuition Fee Scholarship, University of New South Wales, 2016-2020</li>
+        <li style="color: #555">Data61 Student Scholarship, Data61, CSIRO, 2016-2020</li>
+        <li style="color: #555">Excellent Student, School of Information Management, Nanjing University, 2012</li>
+        <li style="color: #555">People Scholarship, Nanjing University, 2011, 2012, 2013</li>
+        </div>
+  <p id="back-top" style="display: block;"> 
+        <a href="#top"><span></span>Back to Top</a> 
+  </p>
+    </div><!--container end-->
+
+
+
+
+    <!-- ===========================
+    FOOTER
+    =========================== -->
+    <footer class="text-center">
+        <p>K17 401-26, CSE, UNSW, Sydney, NSW 2052, Australia 
+        </p>
+    </footer>
+
+    <!--necessary scripts and plugins-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/evenfly.js"></script>
+</body>
+
+</html>
